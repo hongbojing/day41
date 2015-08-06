@@ -33,4 +33,6 @@ pre.center{
     width: 60%;
     border: #F2773F solid;
 }
-
+.odd{
+    background: #d1d1d1;
+}

@@ -12,31 +12,145 @@
 <body ng-controller="CalendarController">
 
   <div class="container">
+
+
     <div class="row">
-      <span class="btn btn-primary col-sm-1 col-sm-offset-2">
-        <span class="badge">Per</span>
-      </span>
-      <span class="btn btn-primary col-sm-1">
-        <span class="badge">Time</span>
-      </span>
-      <span class="btn btn-primary col-sm-1 hidden-xs">
-        <span class="badge">MON</span>
-      </span>
-      <span class="btn btn-primary col-sm-1 hidden-xs">
-        <span class="badge">TUES</span>
-      </span>
-      <span class="btn btn-primary col-sm-1 hidden-xs">
-        <span class="badge">WED</span>
-      </span>
-      <span class="btn btn-primary col-sm-1 hidden-xs">
-        <span class="badge">THUR</span>
-      </span>
-      <span class="btn btn-primary col-sm-1 hidden-xs">
-        <span class="badge">FRI</span>
-      </span>
+      <section>
+        <ul class="nav nav-pills">
+          <li ng-class="{ active: isSet(1) }">
+            <a href ng-click="setTab(1)">Mon</a>
+          </li>
+          <li ng-class="{ active:isSet(2) }">
+            <a href ng-click="setTab(2)">Tue</a>
+          </li>
+          <li ng-class="{ active:isSet(3) }">
+            <a href ng-click="setTab(3)">Wed</a>
+          </li>
+          <li ng-class="{ active:isSet(4) }">
+            <a href ng-click="setTab(4)">Thur</a>
+          </li>
+          <li ng-class="{ active:isSet(5) }">
+            <a href ng-click="setTab(5)">Fri</a>
+          </li>
+        </ul>
+        <div ng-show="isSet(1)">
+          <div class="odd">
+            <p>Period:1</p>
+            <p>7:25 a.m. - 8:15 a.m.</p>
+            <p>ACG5005 - FINANCIAL ACCOUNTING</p>
+            <p>Section: Department Controlled</p>
+            <p>Department: Accounting</p>
+          </div>
+          <div class="even">
+            <p>Period:2</p>
+            <p>8:30 a.m. - 9:20 a.m.</p>
+            <p>ACG5005 - FINANCIAL ACCOUNTING</p>
+            <p>Section: Department Controlled</p>
+            <p>Department: Accounting</p>
+          </div>
+          <div class="odd">
+            <p>Period:3</p>
+            <p>7:25 a.m. - 8:15 a.m.</p>
+            <p>ACG5005 - FINANCIAL ACCOUNTING</p>
+            <p>Section: Department Controlled</p>
+            <p>Department: Accounting</p>
+          </div>
 
+        </div>
+        <div ng-show="isSet(2)">
+
+          <div class="even">
+            <p>Period:4</p>
+            <p>7:25 a.m. - 8:15 a.m.</p>
+            <p>ACG5005 - FINANCIAL ACCOUNTING</p>
+            <p>Section: Department Controlled</p>
+            <p>Department: Accounting</p>
+          </div>
+          <div class="odd">
+            <p>Period:5</p>
+            <p>7:25 a.m. - 8:15 a.m.</p>
+            <p>ACG5005 - FINANCIAL ACCOUNTING</p>
+            <p>Section: Department Controlled</p>
+            <p>Department: Accounting</p>
+          </div>
+          <div class="even">
+            <p>Period:6</p>
+            <p>7:25 a.m. - 8:15 a.m.</p>
+            <p>ACG5005 - FINANCIAL ACCOUNTING</p>
+            <p>Section: Department Controlled</p>
+            <p>Department: Accounting</p>
+          </div>
+
+        </div>
+        <div ng-show="isSet(3)">
+
+          <div class="odd">
+            <p>Period:7</p>
+            <p>7:25 a.m. - 8:15 a.m.</p>
+            <p>ACG5005 - FINANCIAL ACCOUNTING</p>
+            <p>Section: Department Controlled</p>
+            <p>Department: Accounting</p>
+          </div>
+          <div class="even">
+            <p>Period:8</p>
+            <p>7:25 a.m. - 8:15 a.m.</p>
+            <p>ACG5005 - FINANCIAL ACCOUNTING</p>
+            <p>Section: Department Controlled</p>
+            <p>Department: Accounting</p>
+          </div>
+          <div class="odd">
+            <p>Period:9</p>
+            <p>7:25 a.m. - 8:15 a.m.</p>
+            <p>ACG5005 - FINANCIAL ACCOUNTING</p>
+            <p>Section: Department Controlled</p>
+            <p>Department: Accounting</p>
+          </div>
+
+        </div>
+        <div ng-show="isSet(4)">
+
+          <div class="even">
+            <p>Period:10</p>
+            <p>7:25 a.m. - 8:15 a.m.</p>
+            <p>ACG5005 - FINANCIAL ACCOUNTING</p>
+            <p>Section: Department Controlled</p>
+            <p>Department: Accounting</p>
+          </div>
+          <div class="odd">
+            <p>Period:11</p>
+            <p>7:25 a.m. - 8:15 a.m.</p>
+            <p>ACG5005 - FINANCIAL ACCOUNTING</p>
+            <p>Section: Department Controlled</p>
+            <p>Department: Accounting</p>
+          </div>
+
+        </div>
+        <div ng-show="isSet(5)">
+
+          <div class="even">
+            <p>Period:E1</p>
+            <p>7:25 a.m. - 8:15 a.m.</p>
+            <p>ACG5005 - FINANCIAL ACCOUNTING</p>
+            <p>Section: Department Controlled</p>
+            <p>Department: Accounting</p>
+          </div>
+          <div class="odd">
+            <p>Period:E2</p>
+            <p>7:25 a.m. - 8:15 a.m.</p>
+            <p>ACG5005 - FINANCIAL ACCOUNTING</p>
+            <p>Section: Department Controlled</p>
+            <p>Department: Accounting</p>
+          </div>
+          <div class="even">
+            <p>Period:E3</p>
+            <p>7:25 a.m. - 8:15 a.m.</p>
+            <p>ACG5005 - FINANCIAL ACCOUNTING</p>
+            <p>Section: Department Controlled</p>
+            <p>Department: Accounting</p>
+          </div>
+        </div>
+      </section>
     </div>
-
   </div>
 
 
